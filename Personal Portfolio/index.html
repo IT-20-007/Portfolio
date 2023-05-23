@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images\Logo.PNG" type="image/x-icon" id="favicon">
+    <script src="https://kit.fontawesome.com/80c10c7cff.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id="header">
+        <div class="container">
+            <div class="main-container">
+            <nav>
+                <ul class="left_side">
+                    <h1 id="logo">J<span id="logo_span">ay.</span></h1>
+                </ul>
+                <ul class="right_side" id="sidemenu"> 
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <img src="Images/Background.jpg" alt="Background Image" class="background">
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hi, I'm <span>Jay</span><br>Ballar From India</h1>
+        </div>
+    </div>
+    </div>
+
+    <!-- ------------------ About ----------------------- -->
+
+    <div id="about">
+        <div class="about_container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images\Pic.jpg" alt="">
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Jay Ballar, and I'm delighted to share a bit about myself. I have pursued Diploma Engineering in IT, which has helped me develop a strong foundation in Web Development. Learning is a lifelong journey for me, and I am constantly seeking opportunities to expand my horizons and acquire new knowledge. In my professional life, I have had the opportunity to work on project. These experiences have allowed me to develop valuable skills, work in diverse environments, and tackle challenges head-on.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Developer</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building Android/iOS App</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>The Complete 2023 Web Development Bootcamp</li>
+                            <li><span>2022</span><br>Web Design from Envato Tuts+  </li>
+                            <li><span>2021</span><br>Web Develpoment from CodeWithHarry</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2023</span><br>Diploma in IT Engineering</li>
+                            <li><span>2022</span><br>Web Desgin</li>
+                            <li><span>2019</span><br>Schooling</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- ---------- Services ------------  -->
+    <div id="services">
+        <div class="container service-container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design encompasses the creative process of designing and creating visually appealing and user-friendly websites. It involves the use of various elements such as layout, colors, typography, and graphics to create an engaging online experience.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design aims to create a positive user experience that encourages customers to stick with a brand or product. While a UX Designer decides how the user interface works, the UI designer decides how the user interface looks.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>App development refers to the process of creating mobile applications for smartphones, tablets, and other handheld devices. App developers possess a range of skills, including programming languages like Java, Swift, and Kotlin, along with knowledge of development frameworks and tools.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------- Portfolio ------------- -->
+
+    <div id="portfolio">
+        <div class="container portfolio-container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/1.png">
+                    <div class="layer">
+                        <h3>Home Rental Website</h3>
+                        <p>This website helps you to rent a property online and it is available in free of cost</p>
+                        <a href="#"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/2.png">
+                    <div class="layer">
+                        <h3>Rental Page</h3>
+                        <p>This page helps you to display the property which the owner has entered to rent the property</p>
+                        <a href="#"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/3.png">
+                    <div class="layer">
+                        <h3>Apple Clone</h3>
+                        <p>This is the clone of the Apple website which I have made for practicing the design skills.</p>
+                        <a href="#"><i class="fas fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container contact_container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fas fa-paper-plane"></i> jaybalar777@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 9979375354</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkeden.com/"><i class="fab fa-linkeden"></i></a>
+                </div>
+                <a href="CV/JAY BALLAR.pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jay. All right reserved 2023!</p>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyd8msswYjciqBTXbVLI_D3WcKXv7LNMHUE2A38KHAVs_IG-WxnC8Cw3hCJT-YbEoFWBg/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
